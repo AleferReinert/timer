@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oxanium', cursive;
+    background: rgb(5, 83, 29);
+    text-align: center;
+    letter-spacing: 1px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 36px;
+    margin-top: -55px;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transition: opacity 0.1s linear, background 0.1s linear;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+.btn:not(.hidden) {
+    margin: 0 5px;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.btn:hover path {
+    fill: #fff;
+}
+
+svg {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: -2px;
+}
+
+svg path {
+    fill: #333;
+    transition: background 0.1s linear;
+}
+
+#btn-start svg {
+    margin-right: -3px;
+}
+
+.hidden {
+    opacity: 0;
+    width: 0;
+    padding: 0;
+    border: 0;
+    height: 0;
+}
+
+#counter {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding: 5px 0;
+    color: #333;
+}
