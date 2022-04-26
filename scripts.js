@@ -29,13 +29,13 @@ function timer() {
         }
     }
 
-    let hhFormat = hh > 0 ? hh.toString().padStart(2, '0') + ':' : '',
+    let hhFormat = hh > 0 ? hh + ':' : '',
         mmFormat = mm.toString().padStart(2, '0'),
         ssFormat = ss.toString().padStart(2, '0'),
         msFormat = ms.toString().padStart(2, '0'),
-        timeFormat = `${hhFormat}${mmFormat}:${ssFormat}:${msFormat}`;
+        timeFormat = `${hhFormat}${mmFormat}:${ssFormat}<span> ${msFormat}</span>`;
 
-    counter.innerText = timeFormat;
+    counter.innerHTML = timeFormat;
     return timeFormat;
 }
 

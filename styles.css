@@ -90,3 +90,7 @@ svg path {
     padding: 5px 0;
     color: #333;
 }
+
+#counter span {
+    font-size: 22px;
+}
