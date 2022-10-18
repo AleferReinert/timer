@@ -45,7 +45,7 @@
         btnStart.classList.add('hidden');
         btnPause.classList.remove('hidden');
         btnStop.classList.add('hidden');
-        btnStart.title = 'Continuar';
+        btnStart.title = 'Continue';
     });
 
     btnPause.addEventListener('click', function () {
@@ -66,6 +66,6 @@
         btnStart.classList.remove('hidden');
         btnPause.classList.add('hidden');
         btnStop.classList.add('hidden');
-        btnStart.title = 'Iniciar';
+        btnStart.title = 'Start';
     });
 }());
